@@ -1,5 +1,5 @@
 package Memoize::Saves;
-# ABSTRACT: Plug-in module to specify which return values should be memoized
+our $VERSION = '0.67';
 
 $DEBUG = 0;
 
@@ -116,6 +116,15 @@ sub STORE
 
 1;
 
+__END__
+
+=pod
+
+=encoding utf-8
+
+=head1 NAME
+
+Memoize::Saves - Plug-in module to specify which return values should be memoized
 
 =head1 SYNOPSIS
 
