@@ -132,13 +132,14 @@ Memoize::Saves - Plug-in module to specify which return values should be memoize
 
     use Memoize;
 
+    tie my %cache => 'Memoize::Saves',
+      CACHE => [ "word1", "word2" ],
+      DUMP  => [ "word3", "word4" ],
+      REGEX => "Regular Expression",
+      HASH  => $cache_hashref;
+
     memoize 'function',
-      SCALAR_CACHE => [TIE, Memoize::Saves,
-                       CACHE => [ "word1", "word2" ],
-                       DUMP  => [ "word3", "word4" ],
-                       REGEX => "Regular Expression",
-                       HASH  => $cache_hashref,
-                      ],
+      SCALAR_CACHE => [ HASH => \%cache ];
 
 =head1 DESCRIPTION
 
