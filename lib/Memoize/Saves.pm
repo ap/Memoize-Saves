@@ -1,7 +1,9 @@
+use strict; use warnings;
+
 package Memoize::Saves;
 our $VERSION = '0.67';
 
-$DEBUG = 0;
+our $DEBUG;
 
 sub TIEHASH
 {
