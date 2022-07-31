@@ -11,13 +11,13 @@ my %META = (
 	prereqs          => {
 		test         => {
 			requires => {
+				Memoize         => '1.02',
 				'Test::More'    => 0,
 			},
 		},
 		runtime      => {
 			requires => {
 				perl            => '5.006',
-				Memoize         => '1.02',
 			},
 		},
 	},
