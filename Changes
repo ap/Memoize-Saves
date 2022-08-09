@@ -1,5 +1,9 @@
 Release history Memoize-Saves
 
+0.700 Tue 09 Aug 2022
+	- No functional changes
+	- Packaging fix to stop installing boilerplate.pl
+
 0.69  Sun 31 Jul 2022
 	- No functional changes
 	- Minimal test suite
